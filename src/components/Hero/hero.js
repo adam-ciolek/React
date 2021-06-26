@@ -9,7 +9,7 @@ class Hero extends React.Component {
 
       <header className={styles.component}>
         <h2 className={styles.title}>React Op</h2>
-        <img className={styles.image} src='https://i.postimg.cc/jj06w3Pf/space.png' />
+        <img className={styles.image} src='https://i.postimg.cc/jj06w3Pf/space.pnggit add . ' />
       </header>
 
     )
