@@ -3,18 +3,23 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 
 
+class Column extends React.Component {
+
+  static propTypes = {
+    columns: PropTypes.array,
+  };
+
+  render() {
+    return (
+
+      <section className={styles.component}>
+        <h3 className={styles.title}>{this.props.name}</h3>
+      </section>
+    )
+  }
 
 
-const Column = props => (
+}
 
-    <section className={styles.component}>
-        <h3 className={styles.title}>{props.columns}</h3>
-    </section>
-)
-
-
-Column.propTypes = {
-    columns: PropTypes.node.isRequired
-};
 
 export default Column;
