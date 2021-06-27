@@ -14,6 +14,7 @@ class List extends React.Component {
     columns: this.props.columns || [],
   }
 
+
   static propTypes = {
     title: PropTypes.node.isRequired,
     image: PropTypes.string,
@@ -25,6 +26,22 @@ class List extends React.Component {
   static defaultProps = {
     description: settings.defaultListDescription,
     // children: <p>I can do all the things!!!</p>,
+  }
+
+  addColumn(title) {
+    this.setState(state => (
+      {
+        columns: [
+          ...state.columns,
+          {
+            key: state.columns.length ? state.columns[state.columns.length - 1].key + 1 : 0,
+            title,
+            icon: 'list-alt',
+            cards: []
+          }
+        ]
+      }
+    ));
   }
 
   render() {
@@ -50,6 +67,8 @@ class List extends React.Component {
 
     )
   }
+
+
 }
 
 export default List;
