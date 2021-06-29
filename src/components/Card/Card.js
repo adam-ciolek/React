@@ -7,7 +7,8 @@ class Card extends React.Component {
 
   static propTypes = {
     cards: PropTypes.array,
-    cardName: PropTypes.string
+    cardName: PropTypes.string,
+    name: PropTypes.string,
   };
 
   render() {
@@ -15,7 +16,7 @@ class Card extends React.Component {
       <div className={styles.component}>
         <h4>{this.props.name}</h4>
       </div>
-    )
+    );
   }
 }
 
