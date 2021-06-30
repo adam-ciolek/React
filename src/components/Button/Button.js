@@ -4,11 +4,8 @@ import styles from './Button.scss';
 import PropTypes from 'prop-types';
 
 
-const Button = ({variant = '', ...otherProps}) => (
+const Button = ({variant ='', ...otherProps}) => (
  
-  // Button.propType = {
-  //   variant: PropTypes.string,
-  // },
 
   <button 
   {...otherProps} 
@@ -16,7 +13,7 @@ className={styles.component + variant.split(' ').map(name => ' ' + (styles[name]
   />
 );
   
-Button.propType = {
+Button.propTypes = {
   variant: PropTypes.string,
 };
 
