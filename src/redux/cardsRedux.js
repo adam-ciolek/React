@@ -1,8 +1,6 @@
 import shortid from 'shortid';
 
 // selectors
-// export const getCardsForList = ({cards}, listId) => cards.filter(card => card.listId == listId);
-
 
 export const getCardsForColumn = ({cards}, columnId) => (
   cards.filter(card => card.columnId == columnId
