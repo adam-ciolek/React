@@ -15,11 +15,11 @@ class App extends React.Component {
   render() {
     const {title, subtitle, lists} = this.props;
     return (
-
+      
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        < Search />
+        < Search  />
         {/* Create Array and in any object always add key */}
         {/* <List title={['Things to do ', <sup key='1'>soon!</sup>]} img={'https://i.postimg.cc/jj06w3Pf/space.pnggit add . '} ></List> */}
         {lists.map(listData => (
