@@ -9,10 +9,14 @@ export const settings = {
   search: {
     defaultText: 'Search...',
     icon: 'search',
+
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+
 };
+
+
 
 export const pageContents = {
   title: 'My first React app',
@@ -79,6 +83,19 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-3',
+    title: 'What I want to do in future',
+    description: 'In future I want to be ....',
+    image: 'https://i.postimg.cc/0jQBp3J8/pexels-tomas-ryant-3192640-1.jpg',
+  },
+  {
+    id: 'list-4',
+    title: 'Top three films',
+    description: 'Three films which you\'ll love it ',
+    image: 'https://i.postimg.cc/1zDhtLD2/pexels-freestocksorg-133070.jpg',
+  },
+
 ];
 
 const columns = [

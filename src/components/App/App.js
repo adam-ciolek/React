@@ -1,34 +1,22 @@
 import React from 'react';
-import styles from './App.scss';
-import PropTypes from 'prop-types';
-import List from '../List/ListContainer.js';
-import Search from '../Search/SearchContainer';
+import Home from '../Home/HomeContainer';
+import Info from '../Info/Info';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import MainLayout from '../../MainLayout/MainLayout';
+import List from '../List/ListContainer';
+import SearchResult from '../SearchResult/SearchResult';
 
-class App extends React.Component {
-
-  static propTypes = {
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    lists: PropTypes.array,
-  }
-
-  render() {
-    const {title, subtitle, lists} = this.props;
-    return (
-      
-      <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
-        < Search  />
-        {/* Create Array and in any object always add key */}
-        {/* <List title={['Things to do ', <sup key='1'>soon!</sup>]} img={'https://i.postimg.cc/jj06w3Pf/space.pnggit add . '} ></List> */}
-        {lists.map(listData => (
-          <List key={listData.id} {...listData} />
-        ))}
-      </main>
-
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <MainLayout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/info' component={Info} />
+        <Route exact path="/list/:id" component={List} />
+        <Route exact path="/search/:searchString" component= {SearchResult}/>
+      </Switch>
+    </MainLayout>
+  </BrowserRouter>
+);
 
 export default App;
