@@ -158,6 +158,23 @@ const cards = [
   },
 ];
 
+export const AboutMe = {
+  title: 'INFO',
+  subtitle: 'I want to introduce myself ?',
+  image: 'https://i.postimg.cc/mkgpP0D7/pexels-5742722.jpg',
+  imageTitle: 'About me',  
+  content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+};
+
+export const FAQAndMore = {
+  title: 'FAQ',
+  subtitle:  'You can find here much more ... ',
+  image: 'https://i.postimg.cc/9fg9YKFW/pexels-ann-h-2789781.jpg',
+  imageTitle: 'Find you\'r answer',
+  content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+};
+
+
 const initialStoreData = {
   app: {...pageContents},
   lists: [...lists],
